@@ -43,7 +43,7 @@ const HomeSliderTwo = () => {
         // Fallback Slide (shown while loading or if images empty)
         <SwiperSlide>
           <div
-            className="relative w-full min-h-[50vh] md:min-h-[calc(100vh-112px)] bg-cover bg-center rounded-lg shadow-lg"
+            className="relative w-full min-h-[50vh] md:min-h-[calc(100vh-112px)] bg-cover bg-center  shadow-lg"
             style={{
               backgroundImage: `url(${homeBannerBg})`,
             }}
@@ -65,7 +65,7 @@ const HomeSliderTwo = () => {
         images.map((image) => (
           <SwiperSlide key={image._id}>
             <div
-              className="relative w-full h-[50vh] md:h-[calc(100vh-112px)] bg-cover bg-center rounded-lg shadow-lg"
+              className="relative w-full h-[50vh] md:h-[calc(100vh-112px)] bg-cover bg-center  shadow-lg"
               style={{
                 backgroundImage: `url(${image.url})`,
                 backgroundSize: "cover",

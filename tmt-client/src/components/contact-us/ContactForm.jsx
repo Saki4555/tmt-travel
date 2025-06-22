@@ -37,19 +37,19 @@ const ContactForm = () => {
           {/* Name and Email Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Name Field */}
-            <div className="flex items-center justify-center shadow">
+            <div className="flex items-center justify-center ">
               <FaUser className="-mr-7 text-gray-400 z-10" />
               <input
                 type="text"
                 placeholder="Enter Your Name"
                 {...register("name", { required: "Name is required" })}
-                className="w-full p-3 pl-10 border border-gray-300 bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-tmt-prim"
+                className="w-full shadow p-3 pl-10 border border-gray-300 bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-tmt-prim"
               />
               {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
             </div>
 
             {/* Email Field */}
-            <div className="flex shadow items-center justify-center">
+            <div className="flex  items-center justify-center">
               <FaEnvelope className="-mr-7 text-gray-400 z-10" />
               <input
                 type="email"
@@ -58,20 +58,20 @@ const ContactForm = () => {
                   required: "Email is required",
                   pattern: { value: /^\S+@\S+\.\S+$/, message: "Enter a valid email" },
                 })}
-                className="w-full bg-gray-50 p-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tmt-prim"
+                className="w-full shadow bg-gray-50 p-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tmt-prim"
               />
               {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
             </div>
           </div>
 
           {/* Subject Field */}
-          <div className="flex shadow items-center justify-center">
+          <div className="flex    items-center justify-center">
             <FaEdit className="-mr-7 text-gray-400 z-10" />
             <input
               type="text"
               placeholder="Enter Subject"
               {...register("subject", { required: "Subject is required" })}
-              className="w-full p-3 pl-10 border border-gray-300 bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-tmt-prim"
+              className="w-full shadow  p-3 pl-10 border border-gray-300 bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-tmt-prim"
             />
             {errors.subject && <p className="text-red-500 text-sm">{errors.subject.message}</p>}
           </div>

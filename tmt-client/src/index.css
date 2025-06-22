@@ -12,3 +12,5 @@
   --font-jost: "Jost", "sans-serif";
   --font-lato: "Lato", sans-serif;
 }
+
+@custom-variant hover (&:hover);

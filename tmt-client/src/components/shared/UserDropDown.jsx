@@ -27,7 +27,7 @@ const UserDropdown = () => {
       </MenuButton>
 
       {/* Dropdown Menu Items */}
-      <MenuItems className="absolute right-0 mt-4 w-56 bg-white px-4 py-3 mr-5 rounded-md shadow-2xl border border-gray-200">
+      <MenuItems className="absolute -right-5 mt-2 w-56 bg-white px-4 py-3 mr-5 rounded-md shadow-2xl border border-gray-200">
         {/* User Info Section */}
         <div className="border-b border-gray-300 pb-3">
           <p className="font-semibold text-gray-800">

@@ -6,12 +6,12 @@ export default function ContactInfo() {
        <h2 className="text-xl  font-semibold text-gray-700 text-center pb-10">
             Contact Us
           </h2>
-      <div className="container px-10 lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container px-7 lg:px-16 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Phone Number */}
        
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center w-10 h-10 border-2 border-tmt-prim rounded-full">
-            <FaPhoneAlt className="text-tmt-prim text-2xl" />
+        <div className="flex items-center gap-4 shadow p-3">
+          <div className="flex  items-center justify-center w-10 h-10 border-2 border-tmt-prim rounded-full">
+            <FaPhoneAlt className="text-tmt-prim  text-2xl" />
           </div>
           <div>
             <h3 className=" font-semibold text-gray-800">Phone:</h3>
@@ -22,7 +22,7 @@ export default function ContactInfo() {
         </div>
 
         {/* Email Addresses */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 shadow p-3">
           <div className="flex items-center justify-center w-10 h-10 border-2 border-tmt-prim rounded-full">
             <FaEnvelope className="text-tmt-prim text-2xl" />
           </div>
@@ -39,7 +39,7 @@ export default function ContactInfo() {
         </div>
 
         {/* Location (Fixed Icon Shape) */}
-        <div className="flex  items-center gap-4">
+        <div className="flex  items-center gap-4 p-3 shadow">
           <div className="flex items-center justify-center w-10 h-10 border-2 border-tmt-prim rounded-full">
             <FaMapMarkerAlt className="text-tmt-prim text-2xl" />
           </div>

@@ -33,7 +33,7 @@ const WhySelectUs = () => {
             <h2 className="text-xl font-lato md:text-2xl font-extrabold text-gray-700 mt-2">
               Why Select Us for <br /> Your Vacation
             </h2>
-            <p className="text-gray-600 text-sm mt-4 font-lato leading-relaxed">
+            <p className="text-gray-600  mt-4 font-lato leading-relaxed">
             TMT Travel and Tour is a reputable travel agency based in Singapore, offering a wide range of travel services to cater to both individual and corporate clients. With a commitment to excellence, they provide personalized travel solutions, including flight bookings, hotel reservations, tour packages, and visa assistance, ensuring a seamless and enjoyable travel experience for their customers. 
             </p>
             

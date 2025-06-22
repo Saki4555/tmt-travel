@@ -108,11 +108,11 @@ const Navbar = () => {
       ></div>
 
       <div
-        className={`fixed font-jost top-0 left-0 h-full w-72 bg-teal-50 shadow-md z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed flex flex-col font-jost top-0 left-0 h-full w-72 bg-teal-50 shadow-md z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-tmt-prim">
+        <div className="flex justify-between items-center p-4 border-b border-tmt-prim/30">
           <Link to="/">
             {" "}
             <div className="flex flex-row  gap-2">
@@ -129,7 +129,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className="mt-4  space-y-4 px-4 text-gray-700">
+        <ul className="mt-4 flex-1  space-y-4 px-4 text-gray-700 tex-[16px] tracking-wide">
           <li onClick={() => setMenuOpen(false)}>
             <NavLink
               to="/"
@@ -178,7 +178,7 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Details in Sidebar */}
-        <div className="mt-6 px-4 border-t text-sm border-t-tmt-prim pt-4 text-gray-700">
+        <div className=" px-4 mb-10  border-t  border-t-tmt-prim/30 pt-4 text-gray-700">
           <a
             href="tel:+6562521461"
             className="flex items-center space-x-2 hover:text-prim mb-3"

@@ -19,47 +19,9 @@ const Navbar = () => {
   const { user } = useAuth();
   // fixed top-0 left-0 w-full z-50
   return (
-    <header className="sticky top-0 z-[999]">
-      {/* Top bar (Hidden on Small Screens) */}
-      <div className="bg-slate-900 font-lato tracking-wide  text-gray-200 px-6 py-4 text-xs hidden md:flex justify-between items-center">
-        {/* Contact Details */}
-        <div className="flex items-center space-x-4">
-          <a
-            href="tel:+6562521461"
-            className="flex items-center space-x-1 hover:text-tmt-prim"
-          >
-            <FaPhone /> <span>+65 62521461</span>
-          </a>
-          <a
-            href="mailto:tmtquickservice@yahoo.com.sg"
-            className="flex items-center space-x-1 hover:text-tmt-prim"
-          >
-            <FaEnvelope /> <span>tmtquickservice@yahoo.com.sg</span>
-          </a>
-          <a
-            href="mailto:tmtquick@tmtquickservice.com"
-            className="flex items-center space-x-1 hover:text-tmt-prim"
-          >
-            <FaEnvelope /> <span>tmtquick@tmtquickservice.com</span>
-          </a>
-        </div>
-
-        {/* Social Icons */}
-        <div className="flex text-base  space-x-3">
-          <a href="https://www.facebook.com/TMTTravelAndTours?mibextid=wwXIfr&rdid=VkoibUSm9WG27ICS&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18eL8T5rvB%2F%3Fmibextid%3DwwXIfr#" target="_blank" className="hover:text-tmt-prim">
-            <FaFacebook />
-          </a>
-         
-          <a href="#" className="hover:text-tmt-prim">
-            <FaInstagram />
-          </a>
-         
-         
-        </div>
-      </div>
-
+    <header className="z-[999] sticky top-0">
       {/* Main navbar */}
-      <nav className=" shadow-md bg-teal-50">
+      <nav className=" bg-teal-100/80 shadow-md backdrop-blur-3xl ">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           {/* Mobile Menu Toggle (Outlined Icon) */}
           <button
@@ -81,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex font-jost space-x-6 text-gray-700">
+          <ul className="hidden md:flex font-jost text-[16px] tracking-wide space-x-6 text-gray-900">
             <li>
               <NavLink
                 to="/"
@@ -129,9 +91,10 @@ const Navbar = () => {
             <UserDropdown />
           ) : (
             <Link to="/login">
-            <button className="bg-tmt-prim btn btn-sm md:btn-md cursor-pointer text-white px-6 py-2 rounded-md hover:bg-slate-700 transition duration-200 flex items-center justify-center ">
-              Sign In
-            </button></Link>
+              <button className="bg-tmt-prim btn btn-sm md:btn-md cursor-pointer text-white px-6 py-2 rounded-md hover:bg-slate-700 transition duration-200 flex items-center justify-center ">
+                Sign In
+              </button>
+            </Link>
           )}
         </div>
       </nav>
@@ -179,17 +142,17 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li onClick={() => setMenuOpen(false)}>
-              <NavLink
-                to="/all-travel-deals"
-                className={({ isActive }) =>
-                  isActive ? "text-tmt-prim border-tmt-prim border-b-2" : ""
-                }
-              >
-                {" "}
-                Travel Deals
-              </NavLink>
-            </li>
-          
+            <NavLink
+              to="/all-travel-deals"
+              className={({ isActive }) =>
+                isActive ? "text-tmt-prim border-tmt-prim border-b-2" : ""
+              }
+            >
+              {" "}
+              Travel Deals
+            </NavLink>
+          </li>
+
           <li onClick={() => setMenuOpen(false)}>
             <NavLink
               to="/about"

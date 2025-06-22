@@ -28,7 +28,7 @@ const MainLayout = () => {
       )}
 
       {/* Main Content */}
-      <div className="md:flex-1 md:ml-64" onClick={handleContentClick}>
+      <div className="md:flex-1 overflow-x-scroll md:ml-64" onClick={handleContentClick}>
         <DashboardNav toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
         <div className="p-6  bg-gray-100 h-full overflow-auto">
           <Outlet />

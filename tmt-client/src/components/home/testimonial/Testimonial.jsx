@@ -6,7 +6,7 @@ import { reviewBg, } from "../../../assets";
 const Testimonial = () => {
   return (
     <div
-      className="py-20  bg-center bg-tmt-prim/90 bg-cover"
+      className="py-20  bg-center bg-[#1d8991] bg-cover"
       // style={{
       //   backgroundImage: `url(${reviewBg})`,
       // }}

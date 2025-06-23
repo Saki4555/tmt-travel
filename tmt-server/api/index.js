@@ -1,5 +1,10 @@
 const express = require("express");
 const cors = require("cors");
+// for rate limiting and security
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+
+
 const userRoutes = require("./routes/userRoutes");
 
 const travelRoutes = require("./routes/travelRoutes");
@@ -18,10 +23,18 @@ const corsOptions = {
   credentials: true,
   optionSuccessStatus: 200,
 };
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 10, // limit each IP to 100 requests per windowMs
+  message: "Too many requests, please try again later.",
+});
+
 
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(helmet());
+app.use(limiter);
 
 app.use("/uploads", express.static("uploads"));
 

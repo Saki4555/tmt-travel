@@ -11,6 +11,7 @@ const WhySelectUs = () => {
             {/* Background Image */}
             <img
               src={aboutImg1}
+              loading="lazy"
               alt="Background"
               className="rounded-lg shadow-lg  w-[85%]"
             />
@@ -18,6 +19,7 @@ const WhySelectUs = () => {
             <div className="absolute bottom-[-40px] left-12 border-4 border-white shadow-lg rounded-lg">
               <img
                 src={aboutImg2}
+                loading="lazy"
                 alt="Foreground"
                 className="rounded-lg"
               />

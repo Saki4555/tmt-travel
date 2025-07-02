@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet } from "react-router";
 import Sidebar from "../components/dashboard/Sidebar";
 import DashboardNav from "../components/dashboard/DashboardNav";
+import { HelmetProvider } from "react-helmet-async";
 
 
 const MainLayout = () => {
@@ -13,6 +14,7 @@ const MainLayout = () => {
   };
 
   return (
+    <HelmetProvider>
     <div className="md:flex h-screen">
       {/* Sidebar (Collapsible + Mobile Support) */}
       
@@ -35,6 +37,7 @@ const MainLayout = () => {
         </div>
       </div>
     </div>
+    </HelmetProvider>
   );
 };
 

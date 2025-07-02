@@ -3,6 +3,7 @@ import TravelDetailsBanner from "../components/travel-details/TravelDetailsBanne
 import DetailsSection from "../components/travel-details/DetailsSection";
 import ContactUsSection from "../components/travel-details/ContactUsSection";
 import { useLocation } from "react-router";
+import TitleProvider from "../providers/TitleProvider";
 
 const TravelDetails = () => {
   const location = useLocation();
@@ -10,6 +11,8 @@ const TravelDetails = () => {
 
   return (
     <>
+    <TitleProvider title={item.title ? item.title : "Loading..."} />
+    
       <TravelDetailsBanner
         destination={item.destination}
         img={item.image}

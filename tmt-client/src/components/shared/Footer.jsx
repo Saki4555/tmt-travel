@@ -1,12 +1,11 @@
 import {
   FaPhoneAlt,
   FaEnvelope,
-  FaMapMarkerAlt,
+  FaMapMarkedAlt,
   FaFacebook,
-  FaTwitter,
+ 
   FaInstagram,
-  FaWhatsapp,
-  FaPinterest,
+  
 } from "react-icons/fa";
 import { logo } from "../../assets";
 import { Link } from "react-router";
@@ -81,16 +80,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
             <div className="mt-3 space-y-2 text-gray-300">
               <div className="flex items-center space-x-2 hover:text-tmt-prim transition">
-                <FaPhoneAlt className="text-tmt-prim" />
+                <FaPhoneAlt className="text-tmt-prim shrink-0 w-4 h-4" />
                 <a
                   href="tel:+6562521461"
                   className="hover:text-tmt-prim transition"
                 >
                   +65 62521461
+                  
                 </a>
               </div>
               <div className="flex items-center space-x-2 hover:text-tmt-prim transition">
-                <FaEnvelope className="text-tmt-prim" />
+                <FaEnvelope className="text-tmt-prim shrink-0 w-4 h-4" />
                 <a
                   href="mailto:tmtquickservice@yahoo.com.sg"
                   className="hove:text-tmt-prim transition"
@@ -99,7 +99,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2 hover:text-tmt-prim transition">
-                <FaEnvelope className="text-tmt-prim" />
+                <FaEnvelope className="text-tmt-prim shrink-0 w-4 h-4" />
                 <a
                   href="mailto:tmtquick@tmtquickservice.com"
                   className="hove:text-tmt-prim transition"
@@ -108,7 +108,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2 hover:text-tmt-prim transition">
-                <FaMapMarkerAlt className="text-tmt-prim" />
+                <FaMapMarkedAlt className="text-tmt-prim shrink-0 w-4 h-4" />
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=60+Benoi+Road+EMS+Building+Singapore+629906"
                   target="_blank"

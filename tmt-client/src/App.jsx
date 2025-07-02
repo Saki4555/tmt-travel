@@ -21,18 +21,20 @@ import DashboardWelcomePage from "./pages/DashboardWelcomePage";
 import AddImage from "./pages/AddImage";
 import PrivateRoute from "./private/PrivateRoute";
 import AdminRoute from "./private/AdminRoute";
+import { HelmetProvider } from "react-helmet-async";
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <>
       <ScrollToTop /> <Toaster />
+      <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <AuthProvider>
           {" "}
           <Routes>
             <Route element={<MainLayout />}>
-              <Route path="/" element={<Home />} />
+              <Route  path="/" element={<Home />} />
               <Route path="/contact" element={<ContactUs />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/all-travel-deals" element={<AllTravelDeals />} />
@@ -50,6 +52,7 @@ function App() {
           </Routes>
         </AuthProvider>
       </QueryClientProvider>
+      </HelmetProvider>
     </>
   );
 }

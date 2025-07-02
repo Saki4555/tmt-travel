@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header className="z-[999] sticky top-0">
       {/* Main navbar */}
-      <nav className=" bg-teal-100/80 shadow-md backdrop-blur-3xl ">
+      <nav className=" bg-teal-50/80 shadow-md backdrop-blur-3xl ">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           {/* Mobile Menu Toggle (Outlined Icon) */}
           <button
@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex font-jost text-[16px] tracking-wide space-x-6 text-gray-900">
+          <ul className="hidden md:flex font-jost text-[17px] tracking-wide space-x-6 text-black">
             <li>
               <NavLink
                 to="/"
@@ -108,7 +108,7 @@ const Navbar = () => {
       ></div>
 
       <div
-        className={`fixed flex flex-col font-jost top-0 left-0 h-full w-72 bg-teal-50 shadow-md z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed flex flex-col  font-jost top-0 left-0 h-full w-72 bg-teal-50 shadow-md z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -129,7 +129,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className="mt-4 flex-1  space-y-4 px-4 text-gray-700 tex-[16px] tracking-wide">
+        <ul className="mt-4 flex-1 text-lg  space-y-4 px-4 text-gray-800 tex-[16px] tracking-wide">
           <li onClick={() => setMenuOpen(false)}>
             <NavLink
               to="/"

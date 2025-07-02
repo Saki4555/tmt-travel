@@ -3,6 +3,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import toast from "react-hot-toast";
 import useTravelDealsData from "../hooks/userTravelDealsData";
+import TitleProvider from "../providers/TitleProvider";
 
 const AddDeals = () => {
   const {
@@ -51,6 +52,7 @@ const AddDeals = () => {
 
   return (
     <div className="p-6 max-w-2xl mx-auto bg-white shadow-lg rounded-lg">
+      <TitleProvider title="Add Deals" />
       <h2 className="text-2xl font-bold mb-4 text-center">Add a New Deal</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Title */}

@@ -10,7 +10,10 @@ const PrivateRoute = ({children}) => {
     const { user, loading} = useAuth();
     const location = useLocation();
 
-    if(loading) return <DataLoading />
+    if(loading) return <div className='mt-36'>
+        
+        <DataLoading />
+    </div>
     if(user) return children;
     return <Navigate to='/login' state={{from: location } } replace />
 };

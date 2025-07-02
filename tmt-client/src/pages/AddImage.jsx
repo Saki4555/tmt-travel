@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { FaTrash } from "react-icons/fa";
 import useImagesData from "../hooks/useImagesData";
 import { DataLoading } from "../components";
+import TitleProvider from "../providers/TitleProvider";
 
 const AddImage = () => {
   const {
@@ -75,6 +76,7 @@ const AddImage = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-6">
+      <TitleProvider title="Add Image" />
       {/* Upload Section */}
       <div className="card w-full md:w-3/4 lg:w-1/2 bg-base-100 shadow-xl p-6 mb-8">
         <h2 className="text-lg font-bold text-center mb-2">Upload an Image</h2>

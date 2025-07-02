@@ -9,6 +9,7 @@ import toast from "react-hot-toast";
 import useTravelDealsData from "../hooks/userTravelDealsData";
 
 import { DataLoading,    DeleteConfirmationModal,    EditDealsModal } from "../components";
+import TitleProvider from "../providers/TitleProvider";
 
 // Function to format date
 const formatDate = (dateString) => {
@@ -75,6 +76,7 @@ const ManageDeals = () => {
 
   return (
     <div className="p-4 md:p-6 max-w-7xl mx-auto">
+      <TitleProvider title="Manage Deals" />
       <h2 className="text-2xl font-bold mb-4 text-center">Manage Travel Deals</h2>
 
       <div className="overflow-x-auto">

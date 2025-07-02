@@ -8,6 +8,7 @@ import axios from "axios";
 import useAuth from "../hooks/useAuth";
 import toast from "react-hot-toast";
 import SocialSignin from "../components/shared/SocialSignin";
+import TitleProvider from "../providers/TitleProvider";
 
 const Register = () => {
   const {
@@ -83,6 +84,7 @@ const Register = () => {
 
   return (
     <div className="flex font-lato items-center pt-10 pb-16 justify-center min-h-screen bg-gray-100 px-4 sm:px-6 lg:px-8">
+      <TitleProvider title="Sign Up" />
       <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-sm sm:max-w-md">
         <h2 className="text-xl font-bold text-center text-gray-700 mb-6">
           Create an Account

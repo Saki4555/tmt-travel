@@ -6,6 +6,7 @@ import useAuth from "../hooks/useAuth";
 import SocialSignin from "../components/shared/SocialSignin";
 import toast from "react-hot-toast";
 import { useState } from "react";
+import TitleProvider from "../providers/TitleProvider";
 
 const Login = () => {
   const {
@@ -40,6 +41,7 @@ const Login = () => {
   
   return (
     <div className="flex font-lato font items-center justify-center pt-10 pb-16 min-h-[calc(100vh-500px)] bg-gray-100 px-4 sm:px-6 lg:px-8">
+      <TitleProvider title="Login" />
       <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-sm sm:max-w-md">
         <h2 className="text-xl font-bold text-center text-gray-700 mb-6">Sign In to Your Account</h2>
 

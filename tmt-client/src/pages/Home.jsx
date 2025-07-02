@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import {  ChooseUs, DealsAndOffers,  Testimonial } from '../components';
 
 import HomeSliderTwo from '../components/home/hero/HomeSliderTwo';
+import TitleProvider from '../providers/TitleProvider';
 
 
 
@@ -16,8 +17,8 @@ const Home = () => {
     }, []);
     return (
        <>
-       {/* <HomeBanner /> */}
-       {/* <MockUp /> */}
+      <TitleProvider title="Home"/>
+      
        <HomeSliderTwo />
        <DealsAndOffers />
       

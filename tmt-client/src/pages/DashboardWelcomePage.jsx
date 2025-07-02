@@ -1,11 +1,13 @@
 import { FaPlus, FaCog, FaVideo } from "react-icons/fa";
 import { useNavigate } from "react-router";
+import TitleProvider from "../providers/TitleProvider";
 
 const DashboardWelcomePage = () => {
   const navigate = useNavigate();
 
   return (
     <div className="flex flex-col h-full bg-gray-100">
+      <TitleProvider title="Dashboard" />
       {/* Header */}
       <div className="bg-tmt-prim text-white py-6 px-8 shadow-md">
         <h1 className="text-2xl md:text-3xl font-bold">Welcome to TMT Travel Dashboard</h1>

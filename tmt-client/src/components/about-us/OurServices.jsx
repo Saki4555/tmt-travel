@@ -12,10 +12,10 @@ const OurServices = () => (
       <h2 className="text-sm font-semibold text-tmt-prim tracking-wide uppercase">
         Our Services
       </h2>
-      <p className="mt-2 text-xl  font-extrabold text-gray-700 sm:text-2xl">
+      <p className="mt-2 text-3xl  lg:text-4xl  font-extrabold text-gray-700 ">
         Comprehensive Solutions Tailored to Your Needs
       </p>
-      <p className="mt-4 text-base  text-gray-600 max-w-2xl mx-auto">
+      <p className="mt-4 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
         We offer a range of specialized services to meet the diverse requirements of our clients.
       </p>
     </div>

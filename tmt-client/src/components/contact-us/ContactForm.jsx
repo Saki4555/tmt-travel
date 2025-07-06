@@ -17,7 +17,7 @@ const ContactForm = () => {
   const sendMessageMutation = useMutation({
     mutationFn: async (formData) => {
       const response = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/api/v1/emai`,
+        `${import.meta.env.VITE_BASE_URL}/api/v1/email`,
         formData
       );
       return response.data;

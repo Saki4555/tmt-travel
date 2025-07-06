@@ -47,7 +47,16 @@ export const TESTIMONIALS = [
     rating: 5,
     country: "🇲🇾 Malaysia",
   },
+  {
+    id: 7,
+    name: "Liam Tan",
+    review:
+      "Exploring Singapore's city life and attractions was a breeze with TMT. Truly a memorable trip!",
+    rating: 5,
+    country: "🇸🇬 Singapore",
+  },
 ];
+
 
 export const CHOOSE_US_DATA = [
   {

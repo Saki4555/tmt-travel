@@ -33,7 +33,7 @@ const DealsAndOfferCard = ({ item }) => {
 
         <button
           onClick={() => navigate(`/details/${item._id}`, { state: { item } })}
-          className="btn btn-sm bg-tmt-prim cursor-pointer font-semibold text-white  border border-tmt-prim rounded-4xl transition-colors duration-500 hover:bg-transparent hover:text-tmt-prim text-sm"
+          className="btn btn-sm bg-btn-color cursor-pointer font-semibold text-white  border border-btn-color rounded-4xl transition-colors duration-500 hover:bg-transparent hover:text-btn-color text-sm"
         >
           View Details
         </button>

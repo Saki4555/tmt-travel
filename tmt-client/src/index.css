@@ -9,6 +9,7 @@
 
 @theme {
   --color-tmt-prim: #57b4ba;
+  --color-btn-color: #0065F8;
   --font-jost: "Jost", "sans-serif";
   --font-lato: "Lato", sans-serif;
 }

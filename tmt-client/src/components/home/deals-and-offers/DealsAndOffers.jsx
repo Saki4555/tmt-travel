@@ -52,7 +52,7 @@ const DealsAndOffers = () => {
             {/* View All Deals Button */}
             <Link
               to="/all-travel-deals"
-              className="btn bg-teal-500  hover:bg-teal-600 text-white px-6 py-3 rounded-md text-base sm:text-lg transition"
+              className="btn bg-btn-color  hover:bg-btn-color/80 text-white px-6 py-3 rounded-md text-base sm:text-lg transition"
             >
               View All Deals
             </Link>

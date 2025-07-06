@@ -54,7 +54,7 @@ const HomeSliderTwo = () => {
               </h1>
               <button
                 onClick={() => navigate("/all-travel-deals")}
-                className="px-6 md:px-8 text-xs sm:text-sm md:text-lg bg-tmt-prim py-2 md:py-3 cursor-pointer font-semibold text-white border border-tmt-prim rounded-4xl transition-colors duration-500 hover:bg-transparent hover:text-tmt-prim"
+                className="px-6 md:px-8 text-xs sm:text-sm md:text-lg bg-btn-color py-2 md:py-3 cursor-pointer font-semibold text-white border-2 border-btn-color rounded-4xl transition-colors duration-500 hover:bg-transparent "
               >
                 Explore Now
               </button>
@@ -83,7 +83,7 @@ const HomeSliderTwo = () => {
                 </p>
                 <button
                   onClick={() => navigate("/all-travel-deals")}
-                  className="px-6 md:px-8 text-xs sm:text-sm md:text-xl bg-tmt-prim py-2 md:py-3 cursor-pointer font-semibold text-white border border-tmt-prim rounded-4xl transition-colors duration-500 hover:bg-transparent hover:text-tmt-prim"
+                  className="px-7 md:px-10 text-xs sm:text-sm md:text-xl bg-btn-color py-1.5 md:py-2 cursor-pointer font-semibold text-white border-2 border-btn-color rounded-4xl transition-colors duration-500 hover:bg-transparent "
                 >
                   Explore Now
                 </button>

@@ -71,7 +71,7 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Enter your name"
                   {...register("name", { required: "Name is required" })}
-                  className="input input-bordered w-full pl-10 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300"
+                  className="input input-primary input-bordered w-full pl-10 "
                 />
               </div>
               {errors.name && (
@@ -96,7 +96,7 @@ const ContactForm = () => {
                       message: "Enter a valid email",
                     },
                   })}
-                  className="input input-bordered w-full pl-10 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300"
+                  className="input input-primary input-bordered w-full pl-10 "
                 />
               </div>
               {errors.email && (
@@ -116,7 +116,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="Enter subject"
                 {...register("subject", { required: "Subject is required" })}
-                className="input input-bordered w-full pl-10 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300"
+                className="input  input-bordered input-primary w-full pl-10 "
               />
             </div>
             {errors.subject && (
@@ -132,7 +132,7 @@ const ContactForm = () => {
             <textarea
               placeholder="Write your message..."
               {...register("message", { required: "Message is required" })}
-              className="textarea textarea-bordered w-full h-32 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300"
+              className="textarea input-primary textarea-bordered w-full h-32 "
             ></textarea>
             {errors.message && (
               <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
@@ -144,7 +144,7 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={sendMessageMutation.isPending}
-              className="btn bg-teal-500 hover:bg-teal-600 text-white w-full md:w-auto flex items-center justify-center gap-2 disabled:cursor-not-allowed"
+              className="btn bg-btn-color hover:bg-btn-color/80 text-white  w-full md:w-auto flex items-center justify-center gap-2 disabled:cursor-not-allowed"
             >
               <FaPaperPlane />
               {sendMessageMutation.isPending ? "Sending..." : "Send Message"}

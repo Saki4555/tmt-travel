@@ -108,7 +108,7 @@ const AllTravelDeals = () => {
                       onClick={() =>
                         navigate(`/details/${item._id}`, { state: { item } })
                       }
-                      className="inline-block w-full py-2 bg-gradient-to-r from-teal-500 to-teal-700 text-white text-center rounded-lg hover:scale-105 transition duration-300 text-sm sm:text-base"
+                      className="inline-block w-full py-2 bg-gradient-to-r from-btn-color/70 to-btn-color text-white text-center rounded-lg hover:scale-105 transition duration-300 text-sm sm:text-base"
                     >
                       View Details
                     </button>

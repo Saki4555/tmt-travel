@@ -15,7 +15,8 @@ import { useNavigate } from "react-router";
 
 
 const HomeSliderTwo = () => {
-  const { images, isLoading, } = useImagesData();
+  const {  isLoading, } = useImagesData();
+  const images = [];
   // console.log(images);
   const navigate = useNavigate();
 

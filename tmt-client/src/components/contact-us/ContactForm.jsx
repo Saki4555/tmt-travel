@@ -66,7 +66,7 @@ const ContactForm = () => {
                 <span className="label-text font-medium">Your Name</span>
               </label>
               <div className="relative">
-                <FaUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <FaUser  className="absolute z-30 left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 <input
                   type="text"
                   placeholder="Enter your name"
@@ -85,7 +85,7 @@ const ContactForm = () => {
                 <span className="label-text font-medium">Your Email</span>
               </label>
               <div className="relative">
-                <FaEnvelope className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <FaEnvelope className="absolute z-30 left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -111,7 +111,7 @@ const ContactForm = () => {
               <span className="label-text font-medium">Subject</span>
             </label>
             <div className="relative">
-              <FaEdit className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <FaEdit className="absolute z-30 left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
                 placeholder="Enter subject"

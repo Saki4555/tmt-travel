@@ -91,7 +91,7 @@ const Navbar = () => {
             <UserDropdown />
           ) : (
             <Link to="/login">
-              <button className="bg-tmt-prim btn btn-sm md:btn-md cursor-pointer text-white px-6 py-2 rounded-md hover:bg-slate-700 transition duration-200 flex items-center justify-center ">
+              <button className="bg-btn-color btn btn-sm md:btn-md cursor-pointer text-white px-6 py-2 rounded-md hover:bg-btn-color/80 transition duration-200 flex items-center justify-center ">
                 Sign In
               </button>
             </Link>

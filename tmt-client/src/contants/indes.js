@@ -5,7 +5,7 @@ export const TESTIMONIALS = [
     review:
       "TMT Travel made my trip to Switzerland an unforgettable experience! Highly recommended.",
     rating: 5,
-    country: "🇨🇭 Switzerland",
+    country: "🇹🇭 Thailand",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const TESTIMONIALS = [
     review:
       "The European Tour Package was incredible. Great planning and customer support!",
     rating: 5,
-    country: "🇪🇺 Europe",
+    country: "🇻🇳 Vietnam",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const TESTIMONIALS = [
     review:
       "Dubai's desert safari was breathtaking! Can't wait for my next trip.",
     rating: 5,
-    country: "🇦🇪 Dubai",
+    country: "🇦🇪 UAE",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const TESTIMONIALS = [
     review:
       "Loved the cruise to the Mediterranean! Everything was smooth and luxurious.",
     rating: 5,
-    country: "🚢 Mediterranean",
+    country: "🇲🇾 Malaysia",
   },
 ];
 

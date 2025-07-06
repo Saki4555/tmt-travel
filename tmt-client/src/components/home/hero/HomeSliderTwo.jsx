@@ -15,8 +15,8 @@ import { useNavigate } from "react-router";
 
 
 const HomeSliderTwo = () => {
-  const {  isLoading, } = useImagesData();
-  const images = [];
+  const { images, isLoading, } = useImagesData();
+  
   // console.log(images);
   const navigate = useNavigate();
 
@@ -55,7 +55,7 @@ const HomeSliderTwo = () => {
               </h1>
               <button
                 onClick={() => navigate("/all-travel-deals")}
-                className="px-6 md:px-8 text-xs sm:text-sm md:text-lg bg-btn-color py-2 md:py-3 cursor-pointer font-semibold text-white border-2 border-btn-color rounded-4xl transition-colors duration-500 hover:bg-transparent "
+                className="px-7 md:px-10 text-xs sm:text-sm md:text-lg bg-btn-color py-1.5 md:py-2 cursor-pointer font-semibold text-white border-2 border-btn-color rounded-4xl transition-colors duration-500 hover:bg-transparent "
               >
                 Explore Now
               </button>

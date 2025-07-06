@@ -1,27 +1,31 @@
+import React from "react";
 import { Routes, Route } from "react-router";
 import MainLayout from "./layouts/MainLayout";
-import {
-  AboutUs,
-  AddDeals,
-  AddVideo,
-  AllTravelDeals,
-  ContactUs,
-  Home,
-  Login,
-  ManageDeals,
-  Register,
-  TravelDetails,
-} from "./pages";
+
 import ScrollToTop from "./providers/ScrollToTop";
 import DashboardLayout from "./layouts/DashboardLayout";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import AuthProvider from "./providers/AuthProvider";
-import DashboardWelcomePage from "./pages/DashboardWelcomePage";
-import AddImage from "./pages/AddImage";
+
+
 import PrivateRoute from "./private/PrivateRoute";
 import AdminRoute from "./private/AdminRoute";
 import { HelmetProvider } from "react-helmet-async";
+
+
+
+const Home = React.lazy(() => import("./pages/Home"));
+const ContactUs = React.lazy(() => import("./pages/ContactUs"));
+const AboutUs = React.lazy(() => import("./pages/AboutUs"));
+const AllTravelDeals = React.lazy(() => import("./pages/AllTravelDeals"));
+const TravelDetails = React.lazy(() => import("./pages/TravelDetails"));
+const Login = React.lazy(() => import("./pages/Login"));
+const Register = React.lazy(() => import("./pages/Register"));
+const AddDeals = React.lazy(() => import("./pages/AddDeals"));
+const ManageDeals = React.lazy(() => import("./pages/ManageDeals"));
+const AddImage = React.lazy(() => import("./pages/AddImage"));
+const DashboardWelcomePage = React.lazy(() => import("./pages/DashboardWelcomePage"));
 const queryClient = new QueryClient();
 
 function App() {

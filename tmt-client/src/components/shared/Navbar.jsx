@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-2">
               {" "}
               <img src={logo} className="w-6 md:w-10" alt="TMT Travel" />
-              <p className="text-lg md:text-2xl font-jost font-bold text-rose-900">
+              <p className="text-lg md:text-2xl font-jost font-bold text-[#FF0B55]">
                 TMT Travel
               </p>
             </div>

@@ -1,9 +1,14 @@
+import React from 'react';
 import  { useEffect } from 'react';
-import {  ChooseUs, DealsAndOffers,  Testimonial } from '../components';
 
-import HomeSliderTwo from '../components/home/hero/HomeSliderTwo';
+;
 import TitleProvider from '../providers/TitleProvider';
 
+
+const HomeSliderTwo = React.lazy(() => import('../components/home/hero/HomeSliderTwo'));
+const DealsAndOffers = React.lazy(() => import('../components/home/deals-and-offers/DealsAndOffers'));
+const ChooseUs = React.lazy(() => import('../components/home/choose-us/ChooseUs'));
+const Testimonial = React.lazy(() => import('../components/home/testimonial/Testimonial'));
 
 
 
